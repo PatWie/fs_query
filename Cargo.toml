@@ -1,0 +1,26 @@
+[package]
+name = "fs_query"
+version = "0.1.1"
+edition = "2024"
+description = "A Model Context Protocol server for efficient code symbol extraction using Tree-sitter"
+license = "MIT"
+
+[dependencies]
+anyhow = "1.0.98"
+clap = { version = "4.5.43", features = ["derive"] }
+glob = "0.3.3"
+globwalk = "0.9.1"
+regex = "1.11.1"
+rmcp = { version = "0.5.0", default-features = false, features = ["base64", "macros", "schemars", "server", "transport-io"] }
+schemars = { version = "1.0.4", features = ["derive"] }
+serde = { version = "1.0.219", features = ["derive"] }
+tokio = { version = "1.47.1", features = ["io-std", "macros", "rt", "rt-multi-thread"], default-features = false }
+tracing = "0.1.41"
+tracing-subscriber = { version = "0.3.19", default-features = false, features = ["env-filter", "fmt"] }
+tree-sitter = "0.25.8"
+tree-sitter-cpp = "0.23.4"
+tree-sitter-go = "0.23.4"
+tree-sitter-javascript = "0.23.1"
+tree-sitter-python = "0.23.6"
+tree-sitter-rust = "0.24.0"
+tree-sitter-typescript = "0.23.2"
